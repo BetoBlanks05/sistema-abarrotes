@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.producto {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.producto h3 {
+  margin: 0 0 0.5rem;
+}
+
+.producto p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.producto button {
+  margin-top: 0.5rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+aside#carrito {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+aside#carrito ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside#carrito li {
+  margin-bottom: 0.5rem;
+}
+
+aside#carrito button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+section#pedidos {
+  grid-column: span 2;
+  margin-top: 2rem;
+}
+
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  section#pedidos {
+    grid-column: span 1;
+  }
+}
